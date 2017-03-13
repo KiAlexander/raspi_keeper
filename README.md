@@ -1,6 +1,8 @@
 # raspi_keeper
 assitant with face recoginiton and speech recognition 
 
+  
+
   进入rasp_voice目录下，共有三个文件夹include、libs、samples。
   
   * include:包含语音识别用到的一些头文件，如错误码的含义以及语义识别和与语义识别的主要函数定义等，
@@ -9,7 +11,7 @@ assitant with face recoginiton and speech recognition
   
   * sample/schh:该目录下则是工程的主要程序文件，schh.c为主程序，目录下有许多wav文件，除部分属于my_train.py人脸密码识别程序外都是主程序中调用讯飞的文字转语音功能生成的，具体音频内容可在主程序中修改。
   <br>
-  <p>## 整体运行说明<p>
+  <h2>整体运行说明</h2>
   <li>编译</li>
   <pre><code>git clone https://github.com/KiAlexander/raspi_keeper</code></pre>
   <pre><code>cd rasp_voice/samples/schh</code></pre>
