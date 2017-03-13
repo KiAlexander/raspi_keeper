@@ -9,6 +9,7 @@ assitant with face recoginiton and speech recognition
   
   * sample/schh:该目录下则是工程的主要程序文件，schh.c为主程序，目录下有许多wav文件，除部分属于my_train.py人脸密码识别程序外都是主程序中调用讯飞的文字转语音功能生成的，具体音频内容可在主程序中修改。
   <br>
+  # raspi_keeper
   ## 整体运行说明
   <li>编译</li>
   <pre><code>git clone https://github.com/KiAlexander/raspi_keeper</code></pre>
