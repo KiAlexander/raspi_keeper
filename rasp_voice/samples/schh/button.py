@@ -5,10 +5,7 @@ from Tkinter import *
 import os
 import threading
 
-#定义Button的回调函数
-def helloButton():
-    execfile("./bbb.py")
-    
+#定义Button的回调函数 
 def start_button():
     t =threading.Thread(target=voice_thread)
     t.start()
@@ -42,7 +39,6 @@ def stop_music():
 root =Tk()
 
 #buttons
-# bt=Button(root,text = 'Hello Button',command = helloButton)
 
 btn1 = Button(root,text = '开始程序',command = start_button).pack()
 btn2 = Button(root,text = '结束程序',command = stop_button).pack()
