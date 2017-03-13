@@ -83,7 +83,7 @@ sudo apt-get install samba-common-bin
   <pre><code>$ ./schh</code></pre>
  
   <h2>硬件控制</h2>
-  
+  具体引脚设置参考相应文件代码中的定义
   <h3>灯控</h3>
   可用led小灯模拟，也可以用继电器接台灯控制开和关
   <h4>开灯</h4>
