@@ -12,7 +12,31 @@ assitant with face recoginiton and speech recognition
   <pre><code>sudo apt-get dist-upgrade</code></pre>
   <pre><code>sudo rpi-upgrade</code></pre>
   <pre><code>sudo apt-get install vim</code></pre>
-
+  <pre><code>sudo apt-get install libasound2-dev</code></pre>
+  <pre><code>sudo apt-get install omxplayer</code></pre>
+  <li>建议安装samba方便文件操作<li>
+  1. 如果出现错误提示，则需要先执行sudo apt-get update，再重新执行sudo apt-get install samba
+安装完成后，这里只是安装了samba服务，一些基本工具还没有安装，所以还需要安装samba支撑工具：
+sudo apt-get install samba-common-bin
+（注意：这一步非常重要，这个要是不安装会导致像smbpasswd这样的工具没有被安装，后面就无法增加samba用户了）
+  <pre><code>sudo apt-get install samba</code></pre>
+  2. 配置/etc/samba/smb.conf
+  <pre><code>sudo vi /etc/samba/smb.conf</code></pre>
+  <p>修改[homes]段为如下：</p>
+  <pre><code>[homes]
+   comment = Home Directories
+   browseable = yes
+# By default, the home directories are exported read-only. Change the
+# next parameter to 'no' if you want to be able to write to them.
+   read only = no
+# File creation mask is set to 0700 for security reasons. If you want to
+# create files with group=rw permissions, set next parameter to 0775.
+   create mask = 0755
+# Directory creation mask is set to 0700 for security reasons. If you want to
+# create dirs. with group=rw permissions, set next parameter to 0775.
+   directory mask = 0755</code></pre>
+  3. 增加samba用户
+  <pre><code>sudo smbpasswd -a pi</code></pre>
   
   <h2>所使用的硬件材料</h2>
   * <a href="https://item.jd.com/11092662549.html">树莓派3B</a>,建议购买套餐，比较实惠
