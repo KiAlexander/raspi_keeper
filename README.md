@@ -1,5 +1,6 @@
 # raspi_keeper
-a kind of assitant with face recoginiton and speech recognition 
+a kind of raspberrypi assitant with face recoginiton and speech recognition 
+<p>我是智能家居小助手小派，能够帮助您解决生活烦恼，天气预报、音乐播放、家居控制、各式各样的问题对于小派来说全都不在话下</p>
   <h1>工程说明</h1>
   <p>该项目为在北京邮电大学大三时搞得大学生创新项目，使用了树莓派调用讯飞语音库，完成具有一定功能的语音智能管家系统，程序写的比较差，以后水平上去了在回头优化代码</p>
   <p>由于第一次接触树莓派，所以附下<a href="http://www.jianshu.com/p/06c000e46c48">树莓派的首次使用</a></p>
