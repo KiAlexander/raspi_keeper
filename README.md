@@ -1,8 +1,19 @@
 # raspi_keeper
 assitant with face recoginiton and speech recognition 
-
   <h1>工程说明</h1>
-  <li>该项目为在北京邮电大学大三时搞得大学生创新项目，使用了树莓派调用讯飞语音库，完成具有一点功能的语音智能管家系统，程序写的比较差，以后水平上去了在回头优化代码</li>
+  <p>该项目为在北京邮电大学大三时搞得大学生创新项目，使用了树莓派调用讯飞语音库，完成具有一点功能的语音智能管家系统，程序写的比较差，以后水平上去了在回头优化代码</p>
+  <p>由于第一次接触树莓派，所以附下<a href="http://www.jianshu.com/p/06c000e46c48">树莓派的首次使用</a></p>
+  <pre><code>sudo raspi-config</code></pre>
+  <pre><code>sudo nano /etc/apt/sources.list</code></pre>
+  <pre><code>deb http://mirror.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</code></pre>
+  <pre><code>deb-src http://mirror.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</code></pre>
+  <pre><code>sudo apt-get update</code></pre>
+  <pre><code>sudo apt-get upgrade</code></pre>
+  <pre><code>sudo apt-get dist-upgrade</code></pre>
+  <pre><code>sudo rpi-upgrade</code></pre>
+  <pre><code>sudo apt-get install vim</code></pre>
+
+  
   <h2>所使用的硬件材料</h2>
   * <a href="https://item.jd.com/11092662549.html">树莓派3B</a>,建议购买套餐，比较实惠
   
@@ -34,7 +45,6 @@ assitant with face recoginiton and speech recognition
   * libs:包含讯飞提供语音识别的库，里面的x64、x86分别是针对64位和32位的Linux操作系统，而RaspberryPi则是面向树莓派的库文件。
   
   * sample/schh:该目录下则是工程的主要程序文件，schh.c为主程序，目录下有许多wav文件，除部分属于my_train.py人脸密码识别程序外都是主程序中调用讯飞的文字转语音功能生成的，具体音频内容可在主程序中修改。
-  <br>
   <h2>整体运行说明</h2>
   <li>编译</li>
   <pre><code>git clone https://github.com/KiAlexander/raspi_keeper</code></pre>
@@ -51,12 +61,10 @@ assitant with face recoginiton and speech recognition
   <pre><code>python ledopen.py</code></pre>
   <h4>关灯</h4>
   <pre><code>python ledclose.py</code></pre>
-  <br>
   
   <h3>烟雾传感</h3>
   <li>实时监测，为方便语音合成故报警音频在schh.c。所有在运行schh文件前，需要先开启一个终端运行smoke.py</li> 
   <pre><code>python smoke.py</code></pre>
-  <br>
   
   <h3> 用人脸作为识别密码</h3>
   <li>my_train.py为使用simpeCV来进行拍取测试者脸型，训练成特定脸型密码，识别率较好。可单独测试。首次运行，路径下若没有任何jpg文件会拍摄一张包含人脸的照片作为伺候运行的识别密码</li> 
@@ -69,7 +77,6 @@ assitant with face recoginiton and speech recognition
    <li>运行</li>
   <pre><code>./temperature</code></pre>
   
-  <br>
   <h2>GUI界面</h2>
   <li>为方面树莓派触摸屏操作，使用Tkinter编写了button界面,分别控制，开灯关灯，查温湿度，音乐控制等功能</li> 
   <pre><code>python button.py</code></pre>
