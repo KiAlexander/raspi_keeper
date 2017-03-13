@@ -14,7 +14,7 @@ assitant with face recoginiton and speech recognition
   <pre><code>sudo apt-get install vim</code></pre>
   <pre><code>sudo apt-get install libasound2-dev</code></pre>
   <pre><code>sudo apt-get install omxplayer</code></pre>
-  <li>建议安装samba方便文件操作<li>
+  <li>建议安装samba方便文件操作</li>
   1. 如果出现错误提示，则需要先执行sudo apt-get update，再重新执行sudo apt-get install samba
 安装完成后，这里只是安装了samba服务，一些基本工具还没有安装，所以还需要安装samba支撑工具：
 sudo apt-get install samba-common-bin
