@@ -3,25 +3,25 @@ a kind of assitant with face recoginiton and speech recognition
   <h1>工程说明</h1>
   <p>该项目为在北京邮电大学大三时搞得大学生创新项目，使用了树莓派调用讯飞语音库，完成具有一点功能的语音智能管家系统，程序写的比较差，以后水平上去了在回头优化代码</p>
   <p>由于第一次接触树莓派，所以附下<a href="http://www.jianshu.com/p/06c000e46c48">树莓派的首次使用</a></p>
-  <pre><code>sudo raspi-config</code></pre>
-  <pre><code>sudo nano /etc/apt/sources.list</code></pre>
-  <pre><code>deb http://mirror.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</code></pre>
-  <pre><code>deb-src http://mirror.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</code></pre>
-  <pre><code>sudo apt-get update</code></pre>
-  <pre><code>sudo apt-get upgrade</code></pre>
-  <pre><code>sudo apt-get dist-upgrade</code></pre>
-  <pre><code>sudo rpi-upgrade</code></pre>
-  <pre><code>sudo apt-get install vim</code></pre>
-  <pre><code>sudo apt-get install libasound2-dev</code></pre>
-  <pre><code>sudo apt-get install omxplayer</code></pre>
+  <pre><code>$ sudo raspi-config</code></pre>
+  <pre><code>$ sudo nano /etc/apt/sources.list</code></pre>
+  <pre><code>$ deb http://mirror.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</code></pre>
+  <pre><code>$ deb-src http://mirror.sysu.edu.cn/raspbian/raspbian/ jessie main contrib non-free</code></pre>
+  <pre><code>$ sudo apt-get update</code></pre>
+  <pre><code>$ sudo apt-get upgrade</code></pre>
+  <pre><code>$ sudo apt-get dist-upgrade</code></pre>
+  <pre><code>$ sudo rpi-upgrade</code></pre>
+  <pre><code>$ sudo apt-get install vim</code></pre>
+  <pre><code>$ sudo apt-get install libasound2-dev</code></pre>
+  <pre><code>$ sudo apt-get install omxplayer</code></pre>
   <li>建议安装samba方便文件操作</li>
   1. 如果出现错误提示，则需要先执行sudo apt-get update，再重新执行sudo apt-get install samba
 安装完成后，这里只是安装了samba服务，一些基本工具还没有安装，所以还需要安装samba支撑工具：
 sudo apt-get install samba-common-bin
 （注意：这一步非常重要，这个要是不安装会导致像smbpasswd这样的工具没有被安装，后面就无法增加samba用户了）
-  <pre><code>sudo apt-get install samba</code></pre>
+  <pre><code>$ sudo apt-get install samba</code></pre>
   2. 配置/etc/samba/smb.conf
-  <pre><code>sudo vi /etc/samba/smb.conf</code></pre>
+  <pre><code>$ sudo vi /etc/samba/smb.conf</code></pre>
   <p>修改[homes]段为如下：</p>
   <pre><code>[homes]
    comment = Home Directories
@@ -36,7 +36,12 @@ sudo apt-get install samba-common-bin
 # create dirs. with group=rw permissions, set next parameter to 0775.
    directory mask = 0755</code></pre>
   3. 增加samba用户
-  <pre><code>sudo smbpasswd -a pi</code></pre>
+  <pre><code>$ sudo smbpasswd -a pi</code></pre>
+  <li>安装SimpleCv</li>
+  <pre><code>$ sudo apt-get install ipython python-opencv python-scipy python-numpy python-pygame python-setuptools python-pip</code></pre>
+ <pre><code>$ sudo pip install https://github.com/sightmachine/SimpleCV/zipball/develop</code></pre>
+  如果运行SimpleCV提示缺少相应的组件，也可以通过pip指令进行安装，如笔者在运行时提示缺少svgwirte。
+  <pre><code>$ sudo pip install svgwrite</code></pre>
   
   <h2>所使用的硬件材料</h2>
   * <a href="https://item.jd.com/11092662549.html">树莓派3B</a>,建议购买套餐，比较实惠
@@ -71,38 +76,38 @@ sudo apt-get install samba-common-bin
   * sample/schh:该目录下则是工程的主要程序文件，schh.c为主程序，目录下有许多wav文件，除部分属于my_train.py人脸密码识别程序外都是主程序中调用讯飞的文字转语音功能生成的，具体音频内容可在主程序中修改。
   <h2>整体运行说明</h2>
   编译 
-  <pre><code>git clone https://github.com/KiAlexander/raspi_keeper</code></pre>
-  <pre><code>cd rasp_voice/samples/schh</code></pre>
-  <pre><code>source make.sh</code></pre>
+  <pre><code>$ git clone https://github.com/KiAlexander/raspi_keeper</code></pre>
+  <pre><code>$ cd rasp_voice/samples/schh</code></pre>
+  <pre><code>$ source make.sh</code></pre>
   运行
-  <pre><code>./schh</code></pre>
+  <pre><code>$ ./schh</code></pre>
  
   <h2>硬件控制</h2>
   
   <h3>灯控</h3>
   可用led小灯模拟，也可以用继电器接台灯控制开和关
   <h4>开灯</h4>
-  <pre><code>python ledopen.py</code></pre>
+  <pre><code>$ python ledopen.py</code></pre>
   <h4>关灯</h4>
-  <pre><code>python ledclose.py</code></pre>
+  <pre><code>$ python ledclose.py</code></pre>
   
   <h3>烟雾传感</h3>
   实时监测，为方便语音合成故报警音频在schh.c。所有在运行schh文件前，需要先开启一个终端运行smoke.py
-  <pre><code>python smoke.py</code></pre>
+  <pre><code>$ python smoke.py</code></pre>
   
   <h3> 用人脸作为识别密码</h3>
   my_train.py为使用simpeCV来进行拍取测试者脸型，训练成特定脸型密码，识别率较好。可单独测试。首次运行，路径下若没有任何jpg文件会拍摄一张包含人脸的照片作为伺候运行的识别密码
-  <pre><code>python my_train.py</code></pre>
+  <pre><code>$ python my_train.py</code></pre>
   
   <h3> 测周围温湿度</h3>
   结合讯飞文字转语音功能,调用wiringpi进行GPIO控制
   <p>编译</p>
-  <pre><code>source make.sh</code></pre>
+  <pre><code>$ source make.sh</code></pre>
   <p>运行</p>
-  <pre><code>./temperature</code></pre>
+  <pre><code>$ ./temperature</code></pre>
   
   <h2>GUI界面</h2>
   为方面树莓派触摸屏操作，使用Tkinter编写了button界面,分别控制，开灯关灯，查温湿度，音乐控制等功能 
-  <pre><code>python button.py</code></pre>
+  <pre><code>$ python button.py</code></pre>
   
   
