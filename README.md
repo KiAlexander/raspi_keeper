@@ -1,5 +1,5 @@
 # raspi_keeper
-assitant with face recoginiton and speech recognition 
+a kind of assitant with face recoginiton and speech recognition 
   <h1>工程说明</h1>
   <p>该项目为在北京邮电大学大三时搞得大学生创新项目，使用了树莓派调用讯飞语音库，完成具有一点功能的语音智能管家系统，程序写的比较差，以后水平上去了在回头优化代码</p>
   <p>由于第一次接触树莓派，所以附下<a href="http://www.jianshu.com/p/06c000e46c48">树莓派的首次使用</a></p>
@@ -102,7 +102,7 @@ sudo apt-get install samba-common-bin
   <pre><code>./temperature</code></pre>
   
   <h2>GUI界面</h2>
-  <li>为方面树莓派触摸屏操作，使用Tkinter编写了button界面,分别控制，开灯关灯，查温湿度，音乐控制等功能</li> 
+  为方面树莓派触摸屏操作，使用Tkinter编写了button界面,分别控制，开灯关灯，查温湿度，音乐控制等功能 
   <pre><code>python button.py</code></pre>
   
   
