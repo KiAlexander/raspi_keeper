@@ -70,35 +70,35 @@ sudo apt-get install samba-common-bin
   
   * sample/schh:该目录下则是工程的主要程序文件，schh.c为主程序，目录下有许多wav文件，除部分属于my_train.py人脸密码识别程序外都是主程序中调用讯飞的文字转语音功能生成的，具体音频内容可在主程序中修改。
   <h2>整体运行说明</h2>
-  <li>编译</li>
+  编译 
   <pre><code>git clone https://github.com/KiAlexander/raspi_keeper</code></pre>
   <pre><code>cd rasp_voice/samples/schh</code></pre>
   <pre><code>source make.sh</code></pre>
-  <li>运行</li>
+  运行
   <pre><code>./schh</code></pre>
  
   <h2>硬件控制</h2>
   
   <h3>灯控</h3>
-  <li>可用led小灯模拟，也可以用继电器接台灯控制开和关</li> 
+  可用led小灯模拟，也可以用继电器接台灯控制开和关
   <h4>开灯</h4>
   <pre><code>python ledopen.py</code></pre>
   <h4>关灯</h4>
   <pre><code>python ledclose.py</code></pre>
   
   <h3>烟雾传感</h3>
-  <li>实时监测，为方便语音合成故报警音频在schh.c。所有在运行schh文件前，需要先开启一个终端运行smoke.py</li> 
+  实时监测，为方便语音合成故报警音频在schh.c。所有在运行schh文件前，需要先开启一个终端运行smoke.py
   <pre><code>python smoke.py</code></pre>
   
   <h3> 用人脸作为识别密码</h3>
-  <li>my_train.py为使用simpeCV来进行拍取测试者脸型，训练成特定脸型密码，识别率较好。可单独测试。首次运行，路径下若没有任何jpg文件会拍摄一张包含人脸的照片作为伺候运行的识别密码</li> 
+  my_train.py为使用simpeCV来进行拍取测试者脸型，训练成特定脸型密码，识别率较好。可单独测试。首次运行，路径下若没有任何jpg文件会拍摄一张包含人脸的照片作为伺候运行的识别密码
   <pre><code>python my_train.py</code></pre>
   
   <h3> 测周围温湿度</h3>
-  <li>结合讯飞文字转语音功能,调用wiringpi进行GPIO控制</li> 
-   <li>编译</li>
+  结合讯飞文字转语音功能,调用wiringpi进行GPIO控制
+  <p>编译</p>
   <pre><code>source make.sh</code></pre>
-   <li>运行</li>
+  <p>运行</p>
   <pre><code>./temperature</code></pre>
   
   <h2>GUI界面</h2>
