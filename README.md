@@ -1,6 +1,6 @@
-# raspi_keeper
+# <img src="https://github.com/KiAlexander/raspi_keeper/blob/master/logo.png" width="50" >raspi_keeper
 a kind of raspberrypi assitant with face recoginiton and speech recognition 
-<p>我是智能家居小助手小派，能够帮助您解决生活烦恼，天气预报、音乐播放、家居控制、各式各样的问题对于小派来说全都不在话下</p>
+<p>我是智能家居小助手小派，能够帮助您解决生活烦恼，天气预报、音乐播放、家居控制、各式各样的问题对于小派来说全都不在话下(<a href="https://www.youtube.com/watch?v=1NzAqEg7Ylk">演示视频）</a></p>
 <table><tr>
 <td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/left.png" width="275" ></td>
 <td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/front.png" width="275"></td>
