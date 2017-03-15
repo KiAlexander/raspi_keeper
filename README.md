@@ -2,9 +2,9 @@
 a kind of raspberrypi assitant with face recoginiton and speech recognition 
 <p>我是智能家居小助手小派，能够帮助您解决生活烦恼，天气预报、音乐播放、家居控制、各式各样的问题对于小派来说全都不在话下</p>
 <table><tr>
-<td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/left.png" width="250" ></td>
-<td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/front.png" width="100"></td>
-<td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/right.png" width="100"></td>
+<td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/left.png" width="275" ></td>
+<td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/front.png" width="275"></td>
+<td><img src="https://github.com/KiAlexander/raspi_keeper/blob/master/right.png" width="275"></td>
 </tr></table>
   <h1>工程说明</h1>
   <p>该项目为在北京邮电大学大三时搞得大学生创新项目，使用了树莓派调用讯飞语音库，完成具有一定功能的语音智能管家系统，程序写的比较差，以后水平上去了在回头优化代码</p>
