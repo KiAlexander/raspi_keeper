@@ -72,6 +72,9 @@ sudo apt-get install samba-common-bin
   
   * <a href="https://detail.tmall.com/item.htm?id=39020143157&spm=a1z09.2.0.0.GEQKhT&_u=d21a79v8626a">木质别墅</a>只是为了不让造型看起来那么丑
   
+  * <a href="https://detail.tmall.com/item.htm?id=41230531417&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489832889787.TaoPassword-QQ.1&sourceType=item&price=2.09&origin_price=2.2&suid=6E0EA0B0-93BB-45D7-A9A9-81BB976F1B86&cpp=1&shareurl=true&spm=a313p.22.355.28507524265&short_name=h.eYeXP4&cv=js3iNOKbRU&sm=37dfbd&app=chrome">光敏
+  二极管</a>光敏二极管模块对环境光强最敏感，一般用来检测周围环境的亮度和光强，在大多数场合可以与光敏电阻传感器模块通用，二者区别在于，光敏二极管模块方向性较好，可以感知固定方向的光源
+  
   <h2>目录说明</h2>
   进入rasp_voice目录下，共有三个文件夹include、libs、samples。
   
