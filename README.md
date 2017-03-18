@@ -50,29 +50,29 @@ sudo apt-get install samba-common-bin
   <pre><code>$ sudo pip install svgwrite</code></pre>
   
   <h2>所使用的硬件材料</h2>
-  * <a href="https://item.jd.com/11092662549.html">树莓派3B</a>&nbsp 建议购买套餐，比较实惠
+  * <a href="https://item.jd.com/11092662549.html">树莓派3B</a>　建议购买套餐，比较实惠
   
   * <a href="https://item.jd.com/2218383.html">sd卡8g</a>　具体大小看个人需要，一般8g基本够用，个人喜欢自己从<a href="https://www.raspberrypi.org/downloads/raspbian/">树莓派官网</a> 下镜像，比较有趣些
   
-  * <a href="https://detail.tmall.com/item.htm?id=538717145623&spm=a1z09.2.0.0.zAW2zC&_u=d21a79v850d2">树莓派7寸触摸屏</a> 建议买套餐加个配套外科，更方便些 
+  * <a href="https://detail.tmall.com/item.htm?id=538717145623&spm=a1z09.2.0.0.zAW2zC&_u=d21a79v850d2">树莓派7寸触摸屏</a>　建议买套餐加个配套外科，更方便些 
   
-  * <a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.zAW2zC&id=530162749946&_u=d21a79v83a30">树莓派摄像头</a> 用的是官方摄像头，没有选用usb摄像头是因为怕买了然后不兼容树莓派就很麻烦了
+  * <a href="https://item.taobao.com/item.htm?spm=a1z09.2.0.0.zAW2zC&id=530162749946&_u=d21a79v83a30">树莓派摄像头</a>　用的是官方摄像头，没有选用usb摄像头是因为怕买了然后不兼容树莓派就很麻烦了
   
-  * <a href="https://item.taobao.com/item.htm?id=41256373030&price=11.8-13.8&sourceType=item&sourceType=item&suid=217a9c98-4019-4652-8d75-163bca7e3dc9&ut_sk=1.V7Z%2BsWCmDo4DACoA7EeXwPsc_12278902_1489408552971.TaoPassword-QQ.1&cpp=1&shareurl=true&spm=a313p.22.17t.27675671052&short_name=h.3Qrrfn&cv=xUBQOGHT6d&sm=98d51a&app=chrome">usb免驱麦克风</a> 经检测这一款可以兼容树莓派，树莓派上录音略有杂音但不影响识别
+  * <a href="https://item.taobao.com/item.htm?id=41256373030&price=11.8-13.8&sourceType=item&sourceType=item&suid=217a9c98-4019-4652-8d75-163bca7e3dc9&ut_sk=1.V7Z%2BsWCmDo4DACoA7EeXwPsc_12278902_1489408552971.TaoPassword-QQ.1&cpp=1&shareurl=true&spm=a313p.22.17t.27675671052&short_name=h.3Qrrfn&cv=xUBQOGHT6d&sm=98d51a&app=chrome">usb免驱麦克风</a>　经检测这一款可以兼容树莓派，树莓派上录音略有杂音但不影响识别
   
-  * <a href="https://item.taobao.com/item.htm?id=45048032864&price=35&sourceType=item&sourceType=item&suid=0f6dc158-6dc9-4b66-b8c2-ea05f9009798&ut_sk=1.V7Z%2BsWCmDo4DACoA7EeXwPsc_12278902_1489408552971.TaoPassword-QQ.1&cpp=1&shareurl=true&spm=a313p.22.2em.27674317489&short_name=h.3QJcIe&cv=S14fOGJiED&sm=7de044&app=chrome">树莓派音响</a> 要是有更好的选择可以选其他的，这款造型还不是很让人满意
+  * <a href="https://item.taobao.com/item.htm?id=45048032864&price=35&sourceType=item&sourceType=item&suid=0f6dc158-6dc9-4b66-b8c2-ea05f9009798&ut_sk=1.V7Z%2BsWCmDo4DACoA7EeXwPsc_12278902_1489408552971.TaoPassword-QQ.1&cpp=1&shareurl=true&spm=a313p.22.2em.27674317489&short_name=h.3QJcIe&cv=S14fOGJiED&sm=7de044&app=chrome">树莓派音响</a>　要是有更好的选择可以选其他的，这款造型还不是很让人满意
   
   * 网线一根(前期由于没有买树莓派，采取的是笔记本直连的方式）
   
-  * <a href="https://detail.tmall.com/item.htm?id=41254925223&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489406389682.TaoPassword-QQ.1&sourceType=item&price=16.2&origin_price=17.5&suid=6CAF4CBB-A005-4748-9265-93736B3578EF&cpp=1&shareurl=true&spm=a313p.22.1mq.27668117160&short_name=h.3Qih0c&cv=0n2jOtxddr&sm=9871ce&app=chrome">四路继电器</a> 几路的话看自己需要把
+  * <a href="https://detail.tmall.com/item.htm?id=41254925223&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489406389682.TaoPassword-QQ.1&sourceType=item&price=16.2&origin_price=17.5&suid=6CAF4CBB-A005-4748-9265-93736B3578EF&cpp=1&shareurl=true&spm=a313p.22.1mq.27668117160&short_name=h.3Qih0c&cv=0n2jOtxddr&sm=9871ce&app=chrome">四路继电器</a>　几路的话看自己需要把
   
   * <a href="https://detail.tmall.com/item.htm?id=41209915421&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489406389682.TaoPassword-QQ.1&sourceType=item&price=46.08&origin_price=48.5&suid=4C5B6D86-280D-4E8E-9B1E-FCC8A7EBCDD5&cpp=1&shareurl=true&spm=a313p.22.2rx.27667847521&short_name=h.3Q7B7U&cv=t0O9OtwoL3&sm=abc1fb&app=chrome">烟雾传感器</a>
   
   * <a href="https://detail.tmall.com/item.htm?id=41248630584&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489406389682.TaoPassword-QQ.1&sourceType=item&price=4.2&origin_price=6.5&suid=C08EF15C-6D1E-4E61-830F-C6070040A35C&cpp=1&shareurl=true&spm=a313p.22.2x0.27667925560&short_name=h.3Q7Vzq&cv=pykMOtvnUW&sm=45be0d&app=chrome">温湿度模块</a>
   
-  * <a href="https://detail.tmall.com/item.htm?id=39020143157&spm=a1z09.2.0.0.GEQKhT&_u=d21a79v8626a">木质别墅</a> 只是为了不让造型看起来那么丑
+  * <a href="https://detail.tmall.com/item.htm?id=39020143157&spm=a1z09.2.0.0.GEQKhT&_u=d21a79v8626a">木质别墅</a>　只是为了不让造型看起来那么丑
   
-  * <a href="https://detail.tmall.com/item.htm?id=41230531417&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489832889787.TaoPassword-QQ.1&sourceType=item&price=2.09&origin_price=2.2&suid=6E0EA0B0-93BB-45D7-A9A9-81BB976F1B86&cpp=1&shareurl=true&spm=a313p.22.355.28507524265&short_name=h.eYeXP4&cv=js3iNOKbRU&sm=37dfbd&app=chrome">光敏二极管</a> 光敏二极管模块对环境光强最敏感，一般用来检测周围环境的亮度和光强，在大多数场合可以与光敏电阻传感器模块通用，二者区别在于，光敏二极管模块方向性较好，可以感知固定方向的光源
+  * <a href="https://detail.tmall.com/item.htm?id=41230531417&ut_sk=1.VtRk0r44a2MDAJoiipElLqRs_21380790_1489832889787.TaoPassword-QQ.1&sourceType=item&price=2.09&origin_price=2.2&suid=6E0EA0B0-93BB-45D7-A9A9-81BB976F1B86&cpp=1&shareurl=true&spm=a313p.22.355.28507524265&short_name=h.eYeXP4&cv=js3iNOKbRU&sm=37dfbd&app=chrome">光敏二极管</a>　光敏二极管模块对环境光强最敏感，一般用来检测周围环境的亮度和光强，在大多数场合可以与光敏电阻传感器模块通用，二者区别在于，光敏二极管模块方向性较好，可以感知固定方向的光源
   
   <h2>目录说明</h2>
   进入rasp_voice目录下，共有三个文件夹include、libs、samples。
