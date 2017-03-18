@@ -52,7 +52,7 @@ sudo apt-get install samba-common-bin
   <h2>所使用的硬件材料</h2>
   * <a href="https://item.jd.com/11092662549.html">树莓派3B</a>&nbsp 建议购买套餐，比较实惠
   
-  * <a href="https://item.jd.com/2218383.html">sd卡8g</a> 具体大小看个人需要，一般8g基本够用，个人喜欢自己从<a href="https://www.raspberrypi.org/downloads/raspbian/">树莓派官网</a> 下镜像，比较有趣些
+  * <a href="https://item.jd.com/2218383.html">sd卡8g</a>　具体大小看个人需要，一般8g基本够用，个人喜欢自己从<a href="https://www.raspberrypi.org/downloads/raspbian/">树莓派官网</a> 下镜像，比较有趣些
   
   * <a href="https://detail.tmall.com/item.htm?id=538717145623&spm=a1z09.2.0.0.zAW2zC&_u=d21a79v850d2">树莓派7寸触摸屏</a> 建议买套餐加个配套外科，更方便些 
   
